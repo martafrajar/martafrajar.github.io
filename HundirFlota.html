@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<title>Hundir la Flota - Marta Fraile Jara</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+	<!-- Bootstrap -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Icon font -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+</head>
+<body>
+
+	<header id="header">
+		<div id="head" class="parallax" parallax-speed="2">
+			<h1 id="logo" class="text-center">
+				<span class="title">Marta Fraile Jara</span>
+				<span class="tagline">Portfolio<br>
+					<a href="">frailejaramarta@gmail.com</a></span>
+			</h1>
+		</div>
+
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+			
+			<div class="navbar-collapse collapse">
+				
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Inicio</a></li>
+					<li><a href="about.html">Sobre mi</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Mis trabajos<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="HundirFlota.html">Hundir la flota</a></li>
+							<li><a href="StarWars.html">Star Wars</a></li>
+							<li><a href="single.html">Pagina interactiva</a></li>
+						</ul>
+					</li>
+				</ul>
+			
+			</div><!--/.nav-collapse -->			
+		</div>	
+	</nav>
+</header>
+
+<main id="main">
+
+	<div class="container">
+
+		<div class="row topspace">
+			
+			<!-- Sidebar -->
+			<aside class="col-md-4 sidebar sidebar-left">
+
+				<div class="row widget">
+					<div class="col-xs-12">
+						<h4>¿Que es hundir la flota?</h4>
+						<p>Hundir la flota es un juego de mesa para dos jugadores que consiste en intentar hundir los barcos del oponente adivinando su ubicación en una cuadrícula de coordenadas.</p>
+					</div>
+				</div>
+				<div class="row widget">
+					<div class="col-xs-12">
+						<h4>Salida por consola</h4>
+						<p><img src="assets/images/hf1.jpg" alt=""></p>
+					</div>
+				</div>
+				<div class="row widget">
+					<div class="col-xs-12">
+						<h4>Fragmento de codigo</h4>
+						<p><img src="assets/images/hf2.JPG" alt=""></p>
+						<p>En esa parte de codigo se muestra como se genera un portaavion sin que se meta en una casilla en la que ya haya un barco.</p>
+					</div>
+				</div>
+
+			</aside>			<!-- /Sidebar -->
+
+			<!-- Article main content -->
+			<article class="col-sm-8 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">Hundir la flota</h1>
+				</header>
+				<p>OBJETIVO: Realizar un programa en Java o C# que permita jugar a una versión simplificada de Hundir la flota.
+					<br><br>Un jugador humano
+					(usuario) cuyo objetivo será hundir todos los barcos del ordenador en un número
+					determinado de intentos. El ordenador tendrá un tablero con barcos y el usuario
+					disparará para intentar hundirlos.
+					<br><br>Se jugará sobre un tablero de 10x10 posiciones que se enumerarán del 0 al 9 en las
+					columnas y de la A a la J en las filas.
+				</p>
+
+
+				<h3>Requisitos</h3>
+				<p>Una vez el ordenador ha creado su tablero, se mostrará el tablero visible al jugador y se le
+					preguntará a qué posición (fila y columna) quiere disparar. Si en esa posición hay una parte
+					del barco, se mostrará el mensaje “Tocado”. En el caso de que no haya ningún barco en esa
+					posición, se mostrará el mensaje “Agua”.
+					<br><br>Este es el codigo para mostrar un tablero: 
+				</p>
+				<blockquote><img src="assets/images/hf3.JPG" alt=""></blockquote>
+				<p>En ambos casos se mostrará el tablero visible al jugador actualizado con el disparo realizado.
+					Hay que tener en cuenta que en la posición disparada solo se mostrará una A (si era agua)
+					o X (si un barco ha sido tocado). No se deberá indicar el tipo de barco. Por lo tanto, el tablero
+					visible al jugador solo contendrá casillas con -, A o X.
+					<br><br>El usuario seguirá realizando disparos hasta que hunda todos los barcos, en cuyo caso le
+					aparecerá el mensaje de “¡Has ganado!”, o bien, si el jugador no ha conseguido hundir todos
+					los barcos en los intentos que tenía, con lo que le parecerá el mensaje de “¡Has perdido!”.
+					En ambos casos se mostrará el tablero oculto del ordenador y el juego finalizará.</p>
+				
+
+				<h3>Barcos</h3>
+				<p>Al inicio de cada juego se le preguntará al jugador en qué nivel de dificultad quiere jugar y
+					una vez seleccionado el ordenador colocará aleatoriamente los barcos en el tablero (al
+					principio este estará oculto al usuario).
+					<br>Los barcos del tablero podrán estar contiguos, pero hay que asegurarse de que no se
+					solapen
+				</p>
+				<ul>
+					<li>Lancha (L): ocupa una casilla del tablero.</li>
+					<li>Buque (B): ocupa 3 casillas horizontales consecutivas del tablero.</li>
+					<li>Acorazado (Z): ocupa 4 casillas horizontales consecutivas del tablero.</li>
+					<li>Portaaviones (P): ocupa 5 casillas verticales consecutivas del tablero.</li>
+				</ul>
+			</article>
+			<!-- /Article -->
+			
+
+		</div>
+	</div>	<!-- /container -->
+	
+</main>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Contacto</h3>
+				<div class="widget-body">
+					<p>+34   636 58 59 62<br>
+						<a href="mailto:#">frailejaramarta@gmail.com</a><br>
+						<br>
+						23 Calle Azucena,Madrid, CR 2055
+					</p>	
+				</div>
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Redes sociales</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+						<a href=""><i class="fa fa-twitter fa-2"></i></a>
+						<a href=""><i class="fa fa-github fa-2"></i></a>
+						<a href=""><i class="fa fa-facebook fa-2"></i></a>
+					</p>
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+<footer id="underfooter">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p>23 Calle Azucena,Madrid, CR 2055</p>
+				</div>
+			</div>
+
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p class="text-right">
+						Copyright &copy; 2023, Marta Fraile Jara<br> 
+						Design: <a href="http://www.gettemplate.com" rel="designer">Marta Fraile Jara</a> </p>
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+</html>
+
